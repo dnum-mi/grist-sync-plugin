@@ -1,0 +1,17 @@
+name: Version Release Build
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+
+  build:
+    name: Build
+    uses: ./.github/workflows/build.yml
+    with:
+      image: ghcr.io/dnum-mi/grist-sync-plugin
+      context: ./
+      target: prod
