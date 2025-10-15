@@ -1,7 +1,7 @@
 {
   "name": "grist-sync-plugin",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Un plugin pour synchroniser les données entre une API et Grist",
   "author": "Ministère de l'Intérieur - DTNUM - SDID - EQUIPE REFERENTIEL DES APPLICATIONS",
   "license": "MIT",
