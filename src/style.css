@@ -1,0 +1,46 @@
+/**
+ * Styles globaux alignés sur le Design System de l'État (DSFR)
+ * 
+ * Les styles DSFR principaux sont importés via main.ts
+ * Ce fichier contient uniquement des ajustements spécifiques à l'application
+ */
+
+:root {
+  /* Utilisation de la typographie DSFR (Marianne) */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Réinitialisation pour l'application */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-default-grey);
+}
+
+/* Container principal */
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Amélioration de l'accessibilité */
+*:focus-visible {
+  outline: 2px solid var(--border-plain-blue-france);
+  outline-offset: 2px;
+}
+
+/* Styles utilitaires pour les tableaux */
+.fr-table--responsive {
+  overflow-x: auto;
+}
+
+/* Support du mode sombre (si activé dans DSFR) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--background-alt-grey);
+  }
+}
